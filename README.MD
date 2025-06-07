@@ -1,1 +1,1 @@
-# CONFIG
+# Tis my config
