@@ -7,3 +7,4 @@ mkinitcpio.conf
 /etc/environment
     JDTLS_JVM_ARGS="-javaagent:/home/hamstermech/.local/share/nvim/mason/share/jdtls/lombok.jar"
 
+Hi
