@@ -7,4 +7,9 @@ mkinitcpio.conf
 /etc/environment
     JDTLS_JVM_ARGS="-javaagent:/home/hamstermech/.local/share/nvim/mason/share/jdtls/lombok.jar"
 
-Hi
+# To make background transparent for all themes:
+# Inside .config/waybar/user-style.css add:
+/* User custom styles */
+window#waybar {
+    background: transparent;
+}
