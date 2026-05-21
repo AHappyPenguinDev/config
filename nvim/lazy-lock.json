@@ -31,6 +31,7 @@
   "nvim-ts-autotag": { "branch": "main", "commit": "88c1453db4ba7dd24131086fe51fdf74e587d275" },
   "nvim-ts-context-commentstring": { "branch": "main", "commit": "6141a40173c6efa98242dc951ed4b6f892c97027" },
   "nvim-web-devicons": { "branch": "master", "commit": "2795c26c916bb3c57dde308b82be51971fa92747" },
+  "opencode.nvim": { "branch": "main", "commit": "05547308bb931dc5da80a81d282f18e581788752" },
   "plenary.nvim": { "branch": "master", "commit": "74b06c6c75e4eeb3108ec01852001636d85a932b" },
   "remote-sshfs.nvim": { "branch": "main", "commit": "7a12a1677bbe96ca98f0c713448ac1f518ba09b7" },
   "springboot-nvim": { "branch": "main", "commit": "105fb2a0b54fbd819200b244e8079c4c9f1a8415" },
