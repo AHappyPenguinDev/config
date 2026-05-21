@@ -1,0 +1,27 @@
+#To enable early module loading to make sddm theme load faster
+mkinitcpio.conf
+    MODULES=(i915 nvidia nvidia_modeset nvidia_uvm nvidia_drm)
+    
+#Set env variable to allow for lombok compatibility in nvim
+#This comes from /home/hamstermech/.local/share/nvim/lazy/nvim-lspconfig/lsp/jdtls.lua
+/etc/environment
+    JDTLS_JVM_ARGS="-javaagent:/home/hamstermech/.local/share/nvim/mason/share/jdtls/lombok.jar"
+
+<<<<<<< HEAD
+# These env variables are optional and can also change
+/etc/environmment
+    PATH_TO_FX=/home/hamstermech/lib/openjfx-24.0.2_linux-x64_bin-sdk/javafx-sdk-24.0.2/lib
+    JAVA_HOME=/home/hamstermech/.sdkman/candidates/java/current
+    DERBY_HOME=/usr/lib/jvm/java-8-openjdk/db
+    MAVEN_HOME=/home/hamstermech/.sdkman/candidates/maven/current
+    CLASSPATH=.:./sqlite-jdbc-3.46.0.0.jar:./slf4j-api-1.7.13.jar:./slf4j-simple-1.7.13.jar
+    JDTLS_JVM_ARGS="-javaagent:/home/hamstermech/.local/share/nvim/mason/share/jdtls/lombok.jar"
+    SPRING_MAIL_USERNAME
+    SPRING_MAIL_PASSWORD
+    MARIA_DB_USERNAM
+    MARIA_DB_PASSWORD
+    RAZORPAY_API_KEY
+    RAZORPAY_API_SECRET
+    STRIPE_SECRET_KEY
+=======
+>>>>>>> f72da00 (Let's see)
