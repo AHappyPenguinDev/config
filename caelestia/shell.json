@@ -1,0 +1,78 @@
+{
+    "background": {
+        "desktopClock": {
+            "background": {
+                "enabled": false
+            },
+            "enabled": true,
+            "position": "top-right"
+        },
+        "enabled": true,
+        "wallpaperEnabled": true
+    },
+    "bar": {
+        "workspaces": {
+            "activeIndicator": true,
+            "activeLabel": "",
+            "label": "",
+            "occupiedLabel": ""
+        }
+    },
+    "general": {
+        "battery": {
+            "criticalLevel": 3,
+            "warnLevels": [
+                {
+                    "icon": "battery_android_frame_2",
+                    "level": 20,
+                    "message": "Please plug in the charger",
+                    "title": "Battery reminder"
+                },
+                {
+                    "icon": "battery_android_frame_1",
+                    "level": 10,
+                    "message": "Please plug in the charger",
+                    "title": "Battery warning"
+                },
+                {
+                    "critical": true,
+                    "icon": "battery_android_alert",
+                    "level": 5,
+                    "message": "Critical battery level, plug in the charger",
+                    "title": "Battery critical"
+                }
+            ]
+        },
+        "idle": {
+            "inhibitWhenAudio": true,
+            "lockBeforeSleep": true,
+            "timeouts": [
+                {
+                    "idleAction": "lock",
+                    "timeout": 30000
+                },
+                {
+                    "idleAction": "dpms off",
+                    "returnAction": "dpms on",
+                    "timeout": 30000
+                },
+                {
+                    "idleAction": [
+                        "systemctl",
+                        "suspend-then-hibernate"
+                    ],
+                    "timeout": 30000
+                }
+            ]
+        }
+    },
+    "services": {
+        "showLyrics": true,
+        "useFahrenheit": false
+    },
+    "utilities": {
+        "toasts": {
+            "nowPlaying": false
+        }
+    }
+}
