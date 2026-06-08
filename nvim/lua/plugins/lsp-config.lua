@@ -35,29 +35,48 @@ return {
 		"neovim/nvim-lspconfig",
 		config = function()
 			-- Get access to the lspconfig plugins functions
+
 			vim.lsp.config("lua_ls", {
 				cmd = { "lua-language-server", "--stdio" },
 				filetypes = { "lua" },
 			})
-			--
+
 			-- vim.lsp.config('ts_ls', {
 			--   cmd = { 'typescript-language-server', '--stdio' },
 			--   filetypes = {   'typescript', 'typescriptreact' },
 			-- })
+
 			vim.lsp.config("eslint-lsp", {
 				cmd = { "eslint-lsp", "--stdio" },
 				filetypes = { "script", "javascript" },
 			})
 
+			vim.lsp.config("tailwindcss", {
+				cmd = { "tailwindcss-language-server", "--stdio" },
+				filetypes = {
+					"html",
+					"css",
+					"scss",
+					"javascript",
+					"javascriptreact",
+					"typescript",
+					"typescriptreact",
+					"vue",
+					"svelte",
+				},
+			})
+
 			vim.lsp.enable("lua_ls")
 			vim.lsp.enable("eslint-lsp")
+            vim.lsp.enable("tailwindcss")
+
 			-- vim.lsp.enable('ts_ls')
 
 			-- Set vim motion for <Space> + k to show code documentation about the code the cursor is currently over if available
 			vim.keymap.set("n", "<Shift>k", function()
 				vim.lsp.buf.hover({ border = "single", max_height = 25, max_width = 120 })
 			end, { desc = "[C]ode [H]over Documentation" })
-            
+
 			-- Set vim motion for <Space> + c + d to go where the code/variable under the cursor was defined
 			vim.keymap.set("n", "<leader>cd", vim.lsp.buf.definition, { desc = "[C]ode Goto [D]efinition" })
 			-- Set vim motion for <Space> + c + a for display code action suggestions for code diagnostics in both normal and visual mode

@@ -63,6 +63,7 @@ local function get_workspace()
 	local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ":p:h:t")
 	-- Create the workspace directory by concatenating the designated workspace path and the project name
 	local workspace_dir = workspace_path .. project_name
+    print(workspace_dir)
 	return workspace_dir
 end
 
@@ -148,6 +149,8 @@ local function setup_jdtls()
 	local bundles = get_bundles()
 
 	-- Determine the root directory of the project by looking for these specific markers
+    -- If you don't want to create a project, you can simply add an empty .git file to the project
+    -- root, which will allow jdtls to determine where the root is
 	local root_path = jdtls.setup.find_root({ ".git", "mvnw", "gradlew", "pom.xml", "build.gradle" })
 
 	-- Tell our JDTLS language features it is capable of
