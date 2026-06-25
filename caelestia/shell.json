@@ -23,12 +23,6 @@
             "criticalLevel": 3,
             "warnLevels": [
                 {
-                    "icon": "battery_android_frame_2",
-                    "level": 20,
-                    "message": "Please plug in the charger",
-                    "title": "Battery reminder"
-                },
-                {
                     "icon": "battery_android_frame_1",
                     "level": 10,
                     "message": "Please plug in the charger",
@@ -67,6 +61,7 @@
         }
     },
     "services": {
+        "brightnessIncrement": 0.01,
         "showLyrics": true,
         "useFahrenheit": false
     },
