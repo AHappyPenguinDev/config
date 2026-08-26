@@ -1,4 +1,9 @@
 {
+    "appearance": {
+        "transparency": {
+            "enabled": false
+        }
+    },
     "background": {
         "desktopClock": {
             "background": {
@@ -11,6 +16,8 @@
         "wallpaperEnabled": true
     },
     "bar": {
+        "excludedScreens": [
+        ],
         "workspaces": {
             "activeIndicator": true,
             "activeLabel": "",
@@ -19,6 +26,14 @@
         }
     },
     "general": {
+        "apps": {
+            "explorer": [
+                "dolphin"
+            ],
+            "terminal": [
+                "nvim"
+            ]
+        },
         "battery": {
             "criticalLevel": 3,
             "warnLevels": [
@@ -62,7 +77,6 @@
     },
     "services": {
         "brightnessIncrement": 0.01,
-        "showLyrics": true,
         "useFahrenheit": false
     },
     "utilities": {

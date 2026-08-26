@@ -17,7 +17,7 @@ return {
 			{ "<leader>f", name = "[f]ind"},
 			{ "<leader>g", name = "[g]it" },
 			{ "<leader>j", name = "[j]ava" },
-			{ "<leader>t", name = "[t]ab"},
+			{ "<leader>t", name = "[t]oggle"},
 			{ "<leader>r", name = "[r]emote"},
 			{ "<leader>w", name = "[w]indow"},
 		})

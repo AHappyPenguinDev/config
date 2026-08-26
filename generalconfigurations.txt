@@ -13,3 +13,35 @@ mkinitcpio.conf
 window#waybar {
     background: transparent;
 }
+
+
+# /etc/environment
+# Syntax: simple "KEY=VAL" pairs on separate lines
+PATH_TO_FX=/home/hamstermech/lib/openjfx-24.0.2_linux-x64_bin-sdk/javafx-sdk-24.0.2/lib
+JAVA_HOME=/home/hamstermech/.sdkman/candidates/java/current
+DERBY_HOME=/usr/lib/jvm/java-8-openjdk/db
+MAVEN_HOME=/home/hamstermech/.sdkman/candidates/maven/current
+CLASSPATH=.:./sqlite-jdbc-3.46.0.0.jar:./slf4j-api-1.7.13.jar:./slf4j-simple-1.7.13.jar
+JDTLS_JVM_ARGS="-javaagent:/home/hamstermech/.local/share/nvim/mason/share/jdtls/lombok.jar"
+SPRING_MAIL_USERNAME=
+SPRING_MAIL_PASSWORD=
+MARIA_DB_USERNAME=
+MARIA_DB_PASSWORD=
+RAZORPAY_API_KEY=
+RAZORPAY_API_SECRET=
+STRIPE_SECRET_KEY=
+GREENBOOK_JWT_SECRET=
+GREENBOOK_JWT_EXPIRATION=3600000
+GREENBOOK_JWT_REFRESH_WINDOW=604800000
+#SETS CLASSPATH VARIABLE FOR JDBC
+#CLASSPATH=/usr/lib/jvm/java-8-openjdk/db/lib/derby.jar:/usr/lib/jvm/java-8-openjdk/db/lib/derbytools.jar:/usr/lib/jvm/java-8-openjdk/db/lib/derbyoptionaltools.jar:/usr/lib/jvm/java-8-openjdk/db/lib/derby.jar:/usr/lib/jvm/java-8-openjdk/db/lib/derbytools.jar:/usr/lib/jvm/java-8-openjdk/db/lib/derbyoptionaltools.jar
+
+# To force hyprland.lua 
+# /usr/bin/wayland-sessions/hyprland.desktop
+[Desktop Entry]
+Name=Hyprland
+Comment=An intelligent dynamic tiling Wayland compositor
+Exec=/usr/bin/start-hyprland -- --config /home/hamstermech/.config/hypr/hyprland.lua
+Type=Application
+DesktopNames=Hyprland
+Keywords=tiling;wayland;compositor;
